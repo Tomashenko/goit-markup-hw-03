@@ -22,13 +22,13 @@ html{box-sizing:border-box;}
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;}
+  outline: 2px solid red;}
 .list {list-style: none;
  padding: 0;
  margin: 0;}
 
 /*Header*/
-.header-border{border: 1px solid #ECECEC;}
+.header-border{border-bottom: 1px solid #ECECEC;}
 .logo{text-decoration: none;}
 .logo-blue {color: var(--accent-color); font-family: 'Raleway', sans-serif; 
   font-size: 26px;
@@ -188,28 +188,54 @@ margin-left: auto;}
 .site-nav .link.current {color:var(--accent-color);}
 
 /*Фільтер*/
+.portfolio {background-color: aquamarine;}
+
+.portfolio-filter {
+  display: flex;
+  padding-top: 94px;
+  justify-content: center;}
+.portfolio-filter .item{margin-right: 8px;}
+.portfolio-filter .item:last-child{margin-right: 0;}
 .filter{color: var(--title-text-color); background-color:var(--team-section-color);
+  display: inline-block;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  cursor: pointer;}
+  cursor: pointer;
+ border-radius: 4px;
+ padding: 6px 22px;
+ height: 38px;
+ border: none;}
+
 .filter:hover, .filter:focus{color: var(--page-color);background-color: var(--accent-color);}
 
 /*Проекти*/
-.projects{color:var(--title-text-color);
+.projects{display: flex;
+flex-wrap: wrap;
+padding-top: 50px;}
+.projects .item{flex-basis:calc((100-60px)/3);
+ }
+
+
+.projects-name{color:var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-text-decoration: none;}
+  text-decoration: none;
+ margin-top: 20px;
+ margin-bottom: 4px;}
 .filter-list{color:var(--primery-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;}
-.project-link{text-decoration: none;}
+  letter-spacing: 0.03em;
+ margin-top: 0;
+ margin-bottom: 20px;}
+.project-link{text-decoration: none;
+}
 
 
